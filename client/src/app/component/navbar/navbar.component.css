@@ -1,0 +1,26 @@
+/*MATH-TOOLBAR-ROW*/
+
+.title-toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*SPAN*/
+
+.spacer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.spacer a {
+    margin: 0 10% 0 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+mat-icon {
+    font-size: 34px;
+    color: #fff;
+}

@@ -1,0 +1,23 @@
+<div class="container">
+    <form (submit)="sumbmitContacto()" id="contact" color="primary" action="" method="post">
+        <h3>Crear un nuevo contacto</h3>
+        <fieldset>
+            <input [(ngModel)]="contacto.fullname" name="fullname" placeholder="Nombre completo" type="text" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input [(ngModel)]="contacto.mail" name="mail" placeholder="Correo electronico" type="email" required>
+        </fieldset>
+        <fieldset>
+            <input [(ngModel)]="contacto.phone" name="phone" placeholder="Numero de telefono (Opcional)" type="tel" required>
+        </fieldset>
+        <fieldset>
+            <input [(ngModel)]="contacto.age" name="age" placeholder="Edad" type="tel" required>
+        </fieldset>
+        <fieldset>
+            <input [(ngModel)]="contacto.status" name="status" placeholder="status" type="text" required>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+</div>
