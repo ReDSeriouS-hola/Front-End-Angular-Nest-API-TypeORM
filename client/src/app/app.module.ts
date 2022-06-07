@@ -14,6 +14,7 @@ import { FormsModule } from "@angular/forms";
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { ContactoUpdateComponent } from './component/contacto-update/contacto-update.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {MatIconModule} from '@angular/material/icon';
     AppComponent,
     NavbarComponent,
     ContactoListComponent,
-    ContactoFormComponent
+    ContactoFormComponent,
+    ContactoUpdateComponent
   ],
   imports: [
     BrowserModule,

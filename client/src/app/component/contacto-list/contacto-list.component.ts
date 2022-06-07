@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Contacto } from 'src/app/interfaces/contacto';
 import { ContactoService } from "../../services/contacto.service";
 
+
 @Component({
   selector: 'app-contacto-list',
   templateUrl: './contacto-list.component.html',
@@ -9,14 +10,16 @@ import { ContactoService } from "../../services/contacto.service";
 })
 export class ContactoListComponent implements OnInit {
   contactos: Contacto[] = [];
-  constructor(private contactoService: ContactoService) { }
+  constructor(
+    private contactoService: ContactoService,
+    ) { }
 
   ngOnInit(): void {
 
-    this.getProducts()
+    this.getContactos()
   }
 
-  getProducts(){
+  getContactos(){
     this.contactoService.getContactos()
     .subscribe(
       res=>{
@@ -31,7 +34,7 @@ export class ContactoListComponent implements OnInit {
     
     .subscribe(
       res=>{
-        this.getProducts()
+        this.getContactos()
       },
       err=>{
         console.log(err)

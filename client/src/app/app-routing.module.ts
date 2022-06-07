@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactoListComponent } from "./component/contacto-list/contacto-list.component";
 import { ContactoFormComponent } from "./component/contacto-form/contacto-form.component";
+import { ContactoUpdateComponent } from './component/contacto-update/contacto-update.component';
 const routes: Routes = [
 
   {
@@ -18,8 +19,8 @@ const routes: Routes = [
   },
   {
     path:'contacto/edit/:id',
-    component: ContactoFormComponent
-  }
+    component: ContactoUpdateComponent
+  },
 ];
 
 @NgModule({
